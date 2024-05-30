@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import React from "react";
 
 const stairAnimation = {
   initial: {
@@ -20,7 +19,7 @@ const reverseIndex = (index) => {
 
 const Stairs = () => {
   return (
-    <div className="relative h-full w-full">
+    <>
       {[...Array(6)].map((_, index) => {
         return (
           <motion.div
@@ -34,11 +33,11 @@ const Stairs = () => {
               ease: "easeInOut",
               delay: reverseIndex(index) * 0.1,
             }}
-            className="h-full w-full bg-white absolute"
+            className="h-full w-full bg-white relative"
           />
         );
       })}
-    </div>
+    </>
   );
 };
 
