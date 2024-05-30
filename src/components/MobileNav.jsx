@@ -35,7 +35,11 @@ const MobileNav = () => {
             <CiMenuFries className='tex-[32px] text-accent'/>
         </SheetTrigger>
         <SheetContent className="flex flex-col">
-            <div>logo</div>
+            <div className='mt-32 mb0-40 text-center text-2xl'>
+                <Link></Link>
+            </div>
+
+            <nav>nav</nav>
         </SheetContent>
     </Sheet>
   );
