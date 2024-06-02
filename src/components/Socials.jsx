@@ -1,8 +1,5 @@
 import Link from "next/link";
-import {
-  FaGithub,
-  FaLinkedin,
-} from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { SiGmail } from "react-icons/si";
 
@@ -25,7 +22,7 @@ const socials = [
   },
 ];
 
-const Social = ({ containerStyles, iconStyles }) => {
+const Socials = ({ containerStyles, iconStyles }) => {
   return (
     <div className={containerStyles}>
       {socials.map((item, index) => {
@@ -39,4 +36,4 @@ const Social = ({ containerStyles, iconStyles }) => {
   );
 };
 
-export default Social;
+export default Socials;
