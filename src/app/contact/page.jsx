@@ -14,23 +14,23 @@ import {
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 const info = [
   {
-    icon:<FaPhoneAlt/>,
-    title:'Phone',
-    description:'123456789', 
+    icon: <FaPhoneAlt />,
+    title: "Phone",
+    description: "123456789",
   },
   {
-    icon:<FaEnvelope/>,
-    title:'Email',
-    description:'dummy@gmail.com', 
+    icon: <FaEnvelope />,
+    title: "Email",
+    description: "dummy@gmail.com",
   },
   {
-    icon:<FaMapMarkerAlt/>,
-    title:'Address',
-    description:'ABCD Dummy Address', 
+    icon: <FaMapMarkerAlt />,
+    title: "Address",
+    description: "ABCD Dummy Address",
   },
- 
-]
+];
 import { motion } from "framer-motion";
+import { Textarea } from "@/components/ui/textarea";
 
 const Contact = () => {
   return (
@@ -69,12 +69,17 @@ const Contact = () => {
                 <SelectContent>
                   <SelectGroup>
                     <SelectLabel>Select a service </SelectLabel>
-                    <SelectItem value="est" >Web Developer</SelectItem>
-                    <SelectItem value="cst" >UI/UX Design</SelectItem>
-                    <SelectItem value="mst" >Logo Design</SelectItem>
+                    <SelectItem value="est">Web Developer</SelectItem>
+                    <SelectItem value="cst">UI/UX Design</SelectItem>
+                    <SelectItem value="mst">Logo Design</SelectItem>
                   </SelectGroup>
                 </SelectContent>
               </Select>
+              {/* textarea  */}
+              <Textarea
+                className="h-[200px]"
+                placeholder="Type your message here !"
+              />
             </form>
           </div>
           {/* info  */}
@@ -84,6 +89,5 @@ const Contact = () => {
     </motion.section>
   );
 };
-
 
 export default Contact;
