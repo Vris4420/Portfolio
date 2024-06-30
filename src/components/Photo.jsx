@@ -19,11 +19,11 @@ const Photo = () => {
           className="w-[298px] h-[298px] xl:w-[498px] xl:h-[498px] mix-blend-lighten absolute"
         >
           <Image
-            // src="/profilePic.png"
+            src="/profilePic.png"
             priority
             quality={100}
             layout="fill"
-            // alt="Profile Picture"
+            alt="Profile Picture"
             className="object-contain"
           />
         </motion.div>
